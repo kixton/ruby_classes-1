@@ -1,0 +1,16 @@
+array = [7,2,1,-6,1000,65,6,2,3]
+
+array_a = []
+array_b = []
+
+array.each do |num| 
+	
+	if num <= 6
+		array_a.push(num)
+	else
+		array_b.push(num)
+	end
+
+end
+
+array_a = array.select { |num| num <= 6 }

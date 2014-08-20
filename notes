@@ -1,0 +1,123 @@
+attr_reader / Getter
+attr_writer / Setter
+
+http://stackoverflow.com/questions/4370960/what-is-attr-accessor-in-ruby
+
+
+What is an array?  
+	way of storing collection of data
+
+How do you create an empty array?
+	array_name = []
+
+How do you add an item to an array?
+	array_name.push("string")
+ 	array_name << "string"
+
+How do you access an element of an array?
+	array_name[n]
+	n = nth item in the array; array starts with 0
+
+What are some methods to iterate over an array?
+	.each
+	.upcase
+
+
+What is a hash?
+	dictionary-like collection of key=>value
+
+How do you create an empty hash?
+	hash_name = {}
+
+How do you add a key/value pair to a hash?
+	hash_name = { :key => "value"}
+
+How do you access a particular value in a hash?
+	hash_name[:key]
+
+How do you access a value in a nested hash?
+	??
+
+How would you iterate over a hash?
+	??	
+
+
+What are classes and why are they important?
+	?? 
+	Importance: Classes determine the structure of the object (e.g. string, array, hash, float)
+
+What is an instance variable?
+	instance of a class 
+	@instance_variable
+
+	instance method -- initialize, show
+
+What is a class variable?
+	@@class_variable
+	store data that belongs to a class but not its instances
+
+What is the purpose of the initialize method in a class?
+	runs every time Ruby creates new object
+
+How do you instantiate a new instance of a class?
+
+What are getter & setter methods?
+
+
+Iterators: How are each of these used? What do they return?
+
+ARRAY
+-----
+	each - takes each value in an array
+	map - create new array based on original array
+		array.map { |x| x*2 }	#=> [2,4,6,8]
+		array 					#=> [1,2,3,4]
+	select - select elements from array according to criteria
+		array = [1,2,3,4,5,6]
+
+		Non-destructive
+		array.select { |x| x > 3 }		#=> [4,5,6]
+		array.reject { |x| x < 3 }		#=> [3,4,5,6]
+		array.drop_while { |x| x < 4 }	#=> [4,5,6]
+
+		Destructive
+		array.delete_if { |x| x < 4 }
+		array.keep if { |x| x < 4 }
+
+	find - ??
+
+HASHES
+------
+	each - passes the key-value pair of a hash through a block 
+
+	select - returns key-value pairs that meet the criteria (block is TRUE)
+		hash.select { |k,v| v < 200} #=> {"a" => 100, "b" => 150}
+
+	reject - returns key-value pairs (block is FALSE)
+
+	keep_if - deletes every key-value pair from the hash for which the block = FALSE
+
+OTHER
+------
+How does an if expression work? Conditional Execution
+
+if condition 	# evaluates to true
+	code
+elsif condition
+	code
+else
+	code	 	
+end
+
+What is does the word boolean mean?
+	binary variable having two possible values "true" and "false"
+
+How do you check for equality? ==
+
+What is string interpolation?  A way that allows Ruby code to appear within a string. The result of evaluating the code is inserted into the string
+Code can be an expression (1+2) or a variable
+	name = "Kim"
+	"my name is #{name}."
+
+
+

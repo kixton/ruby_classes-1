@@ -1,0 +1,76 @@
+
+
+
+accounts = Hash.new
+
+accounts = {'a' => 1, 'b' => 2 }
+total = 0
+accounts.each_value {|value|
+    total += value
+end
+
+
+
+accounts.each 
+
+total += accounts.
+
+class Person
+	attr_accessor :name
+	attr_accessor :cash
+
+	def initialize(name, cash)
+		@name = name
+		@cash = cash
+		@transactions = []
+
+	end
+
+	def open_account
+	end	
+
+	def deposit
+	end
+	
+	def withdraw
+	end	
+
+end
+
+class Bank 
+	attr_accessor :bank
+
+	def initialize(bank)
+		@bank 
+		@accounts = []
+	end
+	
+	def open_account(person)
+		@accounts.push(person)
+		puts "Hi #{person.title}, you have opened an account at #{bank.bank}"
+	end	
+
+end		
+		
+
+
+# person
+# 	name
+# 	cash (amt)
+
+# bank 
+# 	open new account
+# 	withdraw
+# 	deposit
+# 	transfer
+
+# bonus
+# no negative cash
+# how much money bank has stored
+# create credit card system 
+
+# transfer
+# 	verify account holder
+# 	enough cash
+# 	transfer destination
+
